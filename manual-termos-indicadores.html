@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indicadores de RVV | Ucred RevOps</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">RV</div>
+        <div>
+          <div class="brand-title">Indicadores de RVV</div>
+          <div class="brand-subtitle">Manual de referência</div>
+        </div>
+      </div>
+
+      <div class="sidebar-home">
+        <a class="home-link" href="index.html"><span class="home-link-icon" aria-hidden="true">⌂</span><span>Início</span></a>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-toggle" data-target="nav-intro" aria-expanded="true">Visão geral<span class="caret">▾</span></button>
+        <div id="nav-intro" class="nav-items">
+          <a class="nav-link" href="#visao-geral">Para que serve</a>
+          <a class="nav-link" href="#como-usar">Como usar este manual</a>
+          <a class="nav-link" href="#conceitos">Conceitos que mudam a leitura</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-toggle" data-target="nav-frentes" aria-expanded="true">Frentes<span class="caret">▾</span></button>
+        <div id="nav-frentes" class="nav-items">
+          <a class="nav-link" href="#sdr">SDR</a>
+          <a class="nav-link" href="#closer">Closer</a>
+          <a class="nav-link" href="#cs">Customer Success</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-toggle" data-target="nav-leitura" aria-expanded="true">Leitura prática<span class="caret">▾</span></button>
+        <div id="nav-leitura" class="nav-items">
+          <a class="nav-link" href="#sinais">Sinais rápidos</a>
+          <a class="nav-link" href="#erros">Erros comuns</a>
+        </div>
+      </div>
+
+      <div class="sidebar-note">
+        Use este manual para entender o que cada RVV quer medir, o que entra de verdade na conta e como interpretar o número sem confundir volume, avanço e resultado.
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <div class="hero" id="visao-geral">
+          <div class="hero-eyebrow">Manual de referência</div>
+          <h1>Indicadores de RVV</h1>
+          <p>
+            Este manual existe para padronizar a leitura dos RVVs de SDR, Closer e Customer Success. O foco aqui não é explicar planilha ou fórmula. É deixar claro o que cada indicador mede, o que conta na leitura e onde normalmente nascem os diagnósticos errados.
+          </p>
+        </div>
+
+        <section class="section" id="como-usar">
+          <div class="section-header">
+            <div class="section-kicker">Uso recomendado</div>
+            <h2>Como usar este manual</h2>
+            <div class="section-intro">A leitura fica mais útil quando cada indicador é usado para responder a uma pergunta objetiva. Antes de olhar o número, vale saber qual camada da operação ele está tentando explicar.</div>
+          </div>
+
+          <div class="kb-grid kb-grid-3">
+            <div class="kb-block">
+              <div class="kb-label">Esforço</div>
+              <div class="kb-value">Responde se houve presença operacional suficiente. Mostra volume de ação, alcance ou cobertura.</div>
+            </div>
+            <div class="kb-block">
+              <div class="kb-label">Eficiência</div>
+              <div class="kb-value">Responde se esse esforço conseguiu avançar até o próximo marco importante da jornada.</div>
+            </div>
+            <div class="kb-block">
+              <div class="kb-label">Resultado</div>
+              <div class="kb-value">Responde se o avanço gerou conversão real, qualidade de safra, ativação ou sustentação da base.</div>
+            </div>
+          </div>
+
+          <div class="notice ok">
+            O número isolado quase nunca conta a história inteira. A leitura boa acontece em sequência: esforço, depois eficiência, depois resultado.
+          </div>
+        </section>
+
+        <section class="section" id="sdr">
+          <div class="section-header">
+            <div class="section-kicker">Frente comercial</div>
+            <h2>SDR</h2>
+            <div class="section-intro">No SDR, a pergunta central é: o time está conseguindo transformar volume de abordagem em agenda real e presença qualificada?</div>
+          </div>
+
+          <div class="accordion-list">
+            <details open>
+              <summary>Esforço · Imobiliárias contatadas</summary>
+              <div class="file-meta">
+                <div class="meta-item"><strong>Meta</strong>40 por dia na base orgânica e 20 por dia na base de expansão.</div>
+                <div class="meta-item"><strong>O que conta</strong>Negócio único efetivamente abordado. Repetir contato no mesmo negócio não aumenta o indicador.</div>
+                <div class="meta-item"><strong>O que esse número mostra</strong>Se a rotina de prospecção está com volume suficiente para gerar oportunidade futura.</div>
+                <div class="meta-item"><strong>Leitura prática</strong>Se o esforço cai, o problema ainda está na base da operação. Se o esforço está forte e a agenda não sobe, o gargalo já mudou de camada.</div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Eficiência · Reuniões agendadas</summary>
+              <div class="file-meta">
+                <div class="meta-item"><strong>Meta</strong>20 por semana.</div>
+                <div class="meta-item"><strong>O que conta</strong>Negócio único que chegou ao marco de reunião agendada.</div>
+                <div class="meta-item"><strong>O que esse número mostra</strong>Capacidade de converter abordagem em agenda concreta.</div>
+                <div class="meta-item"><strong>Leitura prática</strong>Se o esforço está alto e a agenda não acompanha, vale revisar discurso, timing, aderência da oferta e qualidade da abordagem inicial.</div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Resultado · Comparecimento</summary>
+              <div class="file-meta">
+                <div class="meta-item"><strong>Meta</strong>70%.</div>
+                <div class="meta-item"><strong>O que conta</strong>Presença real na reunião, e não apenas reunião marcada.</div>
+                <div class="meta-item"><strong>O que esse número mostra</strong>Qualidade da agenda construída e aderência do lead que chegou à reunião.</div>
+                <div class="meta-item"><strong>Leitura prática</strong>Quando o comparecimento cai, a revisão costuma estar em confirmação, contexto da reunião, qualidade do lead levado e expectativa criada no convite.</div>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="section" id="closer">
+          <div class="section-header">
+            <div class="section-kicker">Frente comercial</div>
+            <h2>Closer</h2>
+            <div class="section-intro">No Closer, a leitura boa separa três momentos: manter a frente comercial viva, converter isso em parceria assinada e medir se essa mesma safra vira garantia no prazo esperado.</div>
+          </div>
+
+          <div class="accordion-list">
+            <details open>
+              <summary>Esforço · Reuniões agendadas e realizadas</summary>
+              <div class="file-meta">
+                <div class="meta-item"><strong>Meta de agenda</strong>2 por dia ou 10 por semana.</div>
+                <div class="meta-item"><strong>Meta de realização</strong>7 por semana.</div>
+                <div class="meta-item"><strong>O que esses números mostram</strong>Agenda mostra tração comercial. Realização mostra se essa agenda teve sustentação real.</div>
+                <div class="meta-item"><strong>Leitura prática</strong>Se agenda sobe e realização não acompanha, a operação está colocando reunião no calendário, mas não está consolidando presença e avanço.</div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Eficiência · Contratos de parceria assinados</summary>
+              <div class="file-meta">
+                <div class="meta-item"><strong>Meta</strong>10 por mês.</div>
+                <div class="meta-item"><strong>O que conta</strong>Negócios que chegaram ao marco de contrato de parceria assinado.</div>
+                <div class="meta-item"><strong>O que esse número mostra</strong>Capacidade de transformar negociação em fechamento comercial.</div>
+                <div class="meta-item"><strong>Leitura prática</strong>Se a frente comercial está viva, mas parceria não sobe, o gargalo tende a estar em proposta, negociação, timing ou qualidade da oportunidade fechada.</div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Resultado · Ativação em 30, 60 e 90 dias</summary>
+              <div class="file-meta">
+                <div class="meta-item"><strong>Metas</strong>30 dias = 40% · 60 dias = 60% · 90 dias = 90%.</div>
+                <div class="meta-item"><strong>O que conta</strong>A ativação em garantia dos mesmos negócios que assinaram parceria no período de origem.</div>
+                <div class="meta-item"><strong>O que esse número mostra</strong>Qualidade da safra fechada e consistência da transição entre fechamento e ativação.</div>
+                <div class="meta-item"><strong>Leitura prática</strong>Quando parceria sobe, mas ativação não acompanha, o fechamento existe, mas a safra construída não está convertendo com a qualidade esperada.</div>
+              </div>
+              <div class="notice warn">
+                No Closer, resultado deve ser lido como coorte. O período define a base de parceria assinada. A garantia é avaliada sobre essa mesma base em 30, 60 e 90 dias.
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="section" id="cs">
+          <div class="section-header">
+            <div class="section-kicker">Frente de retenção e expansão</div>
+            <h2>Customer Success</h2>
+            <div class="section-intro">No CS, a primeira camada é cobertura da carteira. Mas a leitura completa da frente também depende de proposta gerada, produtividade da base ativa e saúde da carteira.</div>
+          </div>
+
+          <div class="accordion-list">
+            <details open>
+              <summary>Esforço · Cobertura de carteira e reuniões realizadas</summary>
+              <div class="file-meta">
+                <div class="meta-item"><strong>Meta de cobertura</strong>100% da carteira por mês.</div>
+                <div class="meta-item"><strong>Meta de reuniões</strong>10 por semana.</div>
+                <div class="meta-item"><strong>O que conta</strong>Carteira tocada conforme a régua válida da operação e negócios únicos com reunião realizada no período.</div>
+                <div class="meta-item"><strong>Leitura prática</strong>Se a cobertura cai, o problema é de presença operacional sobre a carteira. Se a cobertura está boa, mas o restante da frente não anda, o gargalo está no que acontece depois do contato.</div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Eficiência · Propostas por imobiliária ativa</summary>
+              <div class="file-meta">
+                <div class="meta-item"><strong>Meta</strong>7,5 propostas por imobiliária ativa por mês.</div>
+                <div class="meta-item"><strong>Supermeta</strong>10 propostas por imobiliária ativa por mês.</div>
+                <div class="meta-item"><strong>O que esse número mostra</strong>Se a atuação do CS está conseguindo gerar oportunidade concreta a partir da base acompanhada.</div>
+                <div class="meta-item"><strong>Leitura prática</strong>Esse indicador separa contato de movimentação real. Cobertura alta sem proposta suficiente indica relacionamento sem avanço comercial.</div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Resultado · Contratos, ativos e churn</summary>
+              <div class="file-meta">
+                <div class="meta-item"><strong>Contratos por imobiliária ativa</strong>Meta de 2,20 por mês, com supermeta de 2,50.</div>
+                <div class="meta-item"><strong>Carteira ativa</strong>Meta de 80%.</div>
+                <div class="meta-item"><strong>Churn</strong>Máximo de 10% ao ano.</div>
+                <div class="meta-item"><strong>O que esse bloco mostra</strong>Se a carteira acompanhada está gerando produtividade real sem perder saúde da base.</div>
+              </div>
+              <div class="notice ok">
+                Mesmo que o painel atual do CS esteja concentrado no esforço por limitação de acesso a parte da base, as metas de eficiência e resultado continuam sendo a referência correta de gestão da frente.
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="section" id="conceitos">
+          <div class="section-header">
+            <div class="section-kicker">Conceitos que mudam a leitura</div>
+            <h2>Termos-base</h2>
+            <div class="section-intro">Esses termos parecem simples, mas são justamente eles que mais distorcem a análise quando passam despercebidos.</div>
+          </div>
+
+          <div class="kb-grid kb-grid-3">
+            <div class="kb-block">
+              <div class="kb-label">Negócio único</div>
+              <div class="kb-value">Mesmo que um cliente receba várias atividades ou participe de várias reuniões, a leitura considera a negociação uma vez quando essa for a regra do indicador.</div>
+            </div>
+            <div class="kb-block">
+              <div class="kb-label">Coorte</div>
+              <div class="kb-value">Base formada em um período de origem e acompanhada ao longo do tempo. No Closer, é isso que sustenta a leitura correta da ativação em 30, 60 e 90 dias.</div>
+            </div>
+            <div class="kb-block">
+              <div class="kb-label">Carteira coberta</div>
+              <div class="kb-value">Negócio em carteira que recebeu pelo menos uma ação válida no mês, conforme a régua atual da operação.</div>
+            </div>
+            <div class="kb-block">
+              <div class="kb-label">Imobiliária ativa</div>
+              <div class="kb-value">Base ativa da operação considerada para metas de CS ligadas a proposta, produtividade e contratos.</div>
+            </div>
+            <div class="kb-block">
+              <div class="kb-label">Reunião realizada</div>
+              <div class="kb-value">Negócio que teve pelo menos uma reunião válida no período. Não é contagem bruta de repetições no mesmo cliente.</div>
+            </div>
+            <div class="kb-block">
+              <div class="kb-label">Churn</div>
+              <div class="kb-value">Perda de base ao longo do tempo. No contexto do RVV de CS, funciona como medida de saúde da carteira e não apenas de volume.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="sinais">
+          <div class="section-header">
+            <div class="section-kicker">Leitura prática</div>
+            <h2>Sinais rápidos</h2>
+            <div class="section-intro">Quando o número chama atenção, estes são os primeiros movimentos de leitura que costumam evitar diagnóstico torto.</div>
+          </div>
+
+          <div class="two-col-cards">
+            <div class="card">
+              <div class="kb-title">
+                <span class="badge ok">Leitura útil</span>
+                <h3>Esforço forte e eficiência fraca</h3>
+              </div>
+              <div class="kb-value">O time está presente, mas não está conseguindo transformar ação em avanço. O gargalo normalmente já não está no volume, e sim no próximo passo da jornada.</div>
+            </div>
+
+            <div class="card">
+              <div class="kb-title">
+                <span class="badge ok">Leitura útil</span>
+                <h3>Eficiência boa e resultado fraco</h3>
+              </div>
+              <div class="kb-value">A operação chega ao marco intermediário, mas não converte aquilo em resultado final. A leitura deve migrar da frente comercial para a qualidade da safra, ativação ou retenção.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="erros">
+          <div class="section-header">
+            <div class="section-kicker">Erros comuns</div>
+            <h2>O que mais distorce a leitura</h2>
+            <div class="section-intro">Quase toda leitura ruim de RVV nasce de um desses atalhos mentais.</div>
+          </div>
+
+          <div class="two-col-cards">
+            <div class="card">
+              <div class="kb-title">
+                <span class="badge warn">Erro comum</span>
+                <h3>Confundir volume com resultado</h3>
+              </div>
+              <div class="kb-value">Número alto de atividade ou reunião não garante conversão. O resultado precisa ser lido na camada certa.</div>
+            </div>
+
+            <div class="card">
+              <div class="kb-title">
+                <span class="badge warn">Erro comum</span>
+                <h3>Ler o Closer sem pensar em safra</h3>
+              </div>
+              <div class="kb-value">Parceria assinada e garantia ativada não pertencem ao mesmo mês por definição. O resultado do Closer pede leitura de coorte.</div>
+            </div>
+
+            <div class="card">
+              <div class="kb-title">
+                <span class="badge warn">Erro comum</span>
+                <h3>Questionar o CS sem olhar a régua</h3>
+              </div>
+              <div class="kb-value">Cobertura de carteira depende da regra vigente do que conta como cobertura. Antes de discutir o número, valide o critério adotado.</div>
+            </div>
+
+            <div class="card">
+              <div class="kb-title">
+                <span class="badge warn">Erro comum</span>
+                <h3>Ler reunião repetida como crescimento real</h3>
+              </div>
+              <div class="kb-value">Em vários indicadores, o que vale é negócio único. Repetição em cima do mesmo cliente não deve inflar artificialmente a leitura.</div>
+            </div>
+          </div>
+        </section>
+
+        <div class="footer-space"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
